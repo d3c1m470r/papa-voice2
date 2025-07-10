@@ -16,11 +16,7 @@
 
 #ifdef LIBXML_SCHEMAS_ENABLED
 
-#include <stdio.h>
-#include <libxml/encoding.h>
-#include <libxml/parser.h>
 #include <libxml/tree.h>
-#include <libxml/xmlerror.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -157,26 +153,22 @@ XMLPUBFUN void
 					 xmlStructuredErrorFunc serror,
 					 void *ctx);
 XMLPUBFUN int
-	    xmlSchemaGetParserErrors	(xmlSchemaParserCtxtPtr ctxt,
+		xmlSchemaGetParserErrors(xmlSchemaParserCtxtPtr ctxt,
 					xmlSchemaValidityErrorFunc * err,
 					xmlSchemaValidityWarningFunc * warn,
 					void **ctx);
-XMLPUBFUN void
-	    xmlSchemaSetResourceLoader	(xmlSchemaParserCtxtPtr ctxt,
-					 xmlResourceLoader loader,
-					 void *data);
 XMLPUBFUN int
-	    xmlSchemaIsValid		(xmlSchemaValidCtxtPtr ctxt);
+		xmlSchemaIsValid	(xmlSchemaValidCtxtPtr ctxt);
 
 XMLPUBFUN xmlSchemaPtr
 	    xmlSchemaParse		(xmlSchemaParserCtxtPtr ctxt);
 XMLPUBFUN void
 	    xmlSchemaFree		(xmlSchemaPtr schema);
-#ifdef LIBXML_DEBUG_ENABLED
+#ifdef LIBXML_OUTPUT_ENABLED
 XMLPUBFUN void
 	    xmlSchemaDump		(FILE *output,
 					 xmlSchemaPtr schema);
-#endif /* LIBXML_DEBUG_ENABLED */
+#endif /* LIBXML_OUTPUT_ENABLED */
 /*
  * Interfaces for validating
  */
@@ -217,7 +209,7 @@ XMLPUBFUN int
 	    xmlSchemaValidateStream	(xmlSchemaValidCtxtPtr ctxt,
 					 xmlParserInputBufferPtr input,
 					 xmlCharEncoding enc,
-					 const xmlSAXHandler *sax,
+					 xmlSAXHandlerPtr sax,
 					 void *user_data);
 XMLPUBFUN int
 	    xmlSchemaValidateFile	(xmlSchemaValidCtxtPtr ctxt,

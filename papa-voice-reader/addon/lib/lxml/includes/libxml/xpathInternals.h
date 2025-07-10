@@ -12,7 +12,6 @@
 #ifndef __XML_XPATH_INTERNALS_H__
 #define __XML_XPATH_INTERNALS_H__
 
-#include <stdio.h>
 #include <libxml/xmlversion.h>
 #include <libxml/xpath.h>
 
@@ -21,12 +20,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/*
- * Backward compatibility
- */
-#define valuePush xmlXPathValuePush
-#define valuePop xmlXPathValuePop
 
 /************************************************************************
  *									*
@@ -304,7 +297,7 @@ XMLPUBFUN void *
     if (ctxt == NULL) return;						\
     if (nargs != (x))							\
         XP_ERROR(XPATH_INVALID_ARITY);					\
-    if (ctxt->valueNr < (x))						\
+    if (ctxt->valueNr < ctxt->valueFrame + (x))				\
         XP_ERROR(XPATH_STACK_ERROR);
 
 /**
@@ -484,10 +477,11 @@ XMLPUBFUN xmlXPathParserContextPtr
 XMLPUBFUN void
 		xmlXPathFreeParserContext	(xmlXPathParserContextPtr ctxt);
 
+/* TODO: remap to xmlXPathValuePop and Push. */
 XMLPUBFUN xmlXPathObjectPtr
-		xmlXPathValuePop		(xmlXPathParserContextPtr ctxt);
+		valuePop			(xmlXPathParserContextPtr ctxt);
 XMLPUBFUN int
-		xmlXPathValuePush		(xmlXPathParserContextPtr ctxt,
+		valuePush			(xmlXPathParserContextPtr ctxt,
 						 xmlXPathObjectPtr value);
 
 XMLPUBFUN xmlXPathObjectPtr
@@ -521,7 +515,6 @@ XMLPUBFUN void
 
 XMLPUBFUN void
 		xmlXPathRoot			(xmlXPathParserContextPtr ctxt);
-XML_DEPRECATED
 XMLPUBFUN void
 		xmlXPathEvalExpr		(xmlXPathParserContextPtr ctxt);
 XMLPUBFUN xmlChar *
