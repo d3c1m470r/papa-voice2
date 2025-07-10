@@ -15,7 +15,7 @@ from ..facebook_parser import FacebookParser
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     
     __gestures__ = {
-        "kb:nvda+a": "readWebContent",
+        "kb:nvda+a": "script_readWebContent",
     }
     
     def __init__(self):
