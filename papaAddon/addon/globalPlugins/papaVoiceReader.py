@@ -1,6 +1,15 @@
 import threading
 import wx
 import re
+import os
+import sys
+
+# Guarantee that the add-on’s root directory (the parent of this file’s
+# ``globalPlugins`` package) is on ``sys.path`` *before* we attempt absolute
+# imports. Without this, NVDA may fail to resolve our internal modules.
+_root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+if _root_dir not in sys.path:
+    sys.path.insert(0, _root_dir)
 
 # NVDA-specific imports
 import globalPluginHandler
