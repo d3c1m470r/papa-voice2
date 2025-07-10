@@ -1,51 +1,16 @@
-import threading
-import wx
-import re
+# Ensure bundled third-party libraries in the "lib" subfolder are importable
+import os
+import sys
 
-# NVDA-specific imports
-import globalPluginHandler
-import ui
-import api
-import braille
+# Addon root folder (the one that contains this __init__.py)
+_addon_root: str = os.path.dirname(__file__)
+_lib_dir: str = os.path.join(_addon_root, "lib")
 
-# Project-specific imports
-from .extract_content import extract_article_content
-from .facebook_parser import FacebookParser
+# Prepend so that our libs take precedence over any conflicting versions that NVDA might ship.
+if _lib_dir not in sys.path:
+    sys.path.insert(0, _lib_dir)
 
-class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-    def __init__(self):
-        super(GlobalPlugin, self).__init__()
-        self.facebook_parser = FacebookParser()
+# Initialise translation infrastructure as early as possible so that _() works everywhere.
+import addonHandler  # noqa: E402 – imported after path manipulation on purpose
 
-    def is_facebook_url(self, url):
-        """Check if a URL is a Facebook URL."""
-        return re.match(r'https?://(www\\.)?facebook\\.com', url)
-
-    def script_readWebContent(self, gesture):
-        try:
-            browser = api.getForegroundObject()
-            if browser.role == api.controlTypes.ROLE_PANE:
-                browser = browser.parent
-            url = browser.value
-            if not url:
-                ui.message("Could not get URL from the browser.")
-                return
-
-            if self.is_facebook_url(url):
-                content = self.facebook_parser.parse(url)
-                if content:
-                    ui.message(content)
-                else:
-                    ui.message("No main content found on this Facebook page.")
-            else:
-                article_content = extract_article_content(url)
-                if article_content:
-                    ui.message(article_content)
-                else:
-                    ui.message("No article content could be extracted.")
-        except Exception as e:
-            ui.message(f"Error: {e}")
-    
-    script_readWebContent.category = "PapaVoice"
-    script_readWebContent.description = "Reads the main content of the current web page intelligently."
-    script_readWebContent.gesture = "kb:nvda+alt+i" 
+addonHandler.initTranslation()
