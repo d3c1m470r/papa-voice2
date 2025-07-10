@@ -1,1 +1,0 @@
-# Hungarian Facebook Reader Add-on for NVDA
