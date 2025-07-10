@@ -14,3 +14,20 @@ if _lib_dir not in sys.path:
 import addonHandler  # noqa: E402 – imported after path manipulation on purpose
 
 addonHandler.initTranslation()
+
+from importlib import import_module
+
+# Expose sub-modules so that absolute imports like `papaVoiceReader.extract_content`
+# succeed when this add-on is installed under NVDA.
+# When NVDA loads the add-on it places the add-on directory (named after the
+# add-on identifier, i.e. ``papaVoiceReader``) on ``sys.path``.  Because this
+# directory also contains our Python package with the same name, we need to
+# ensure that importing ``papaVoiceReader`` yields the inner package rather than
+# the outer directory itself.  We therefore import the inner package here and
+# re-export it so ``sys.modules['papaVoiceReader']`` resolves correctly.
+
+_inner_pkg = import_module('.papaVoiceReader', __package__)
+sys.modules[__name__] = _inner_pkg
+
+# Clean-up namespace
+del import_module, sys, _inner_pkg
