@@ -50,7 +50,7 @@ A billentyűkombináció (`Insert+J`) megváltoztatható az NVDA beállításaib
 ### Technikai részletek
 
 - **Alapnyelv**: Python 3
-- **Függőségek**: requests, html2text, beautifulsoup4 (tisztán Python könyvtárak)
+- **Függőségek**: requests, html2text, beautifulsoup4, readability-lxml (a `lib` mappában csomagolva)
 - **Architektúra**: NVDA Global Plugin
 - **Facebook támogatás**: DOM-alapú bejegyzés-felismerés, hirdetésszűrés
 - **Tartalomkinyerés**: Egyszerű heurisztika híroldalakhoz, egyedi parser Facebookhoz
@@ -64,10 +64,10 @@ papa-voice-reader/                    # NVDA kiegészítő forrásmappa
 │   ├── __init__.py                   # Fő plugin kód
 │   └── lib/                          # Csomagolt függőségek
 ├── manifest.ini                      # NVDA kiegészítő metaadatok
-src/                                  # Fejlesztési fájlok
+src/                                  # A kiegészítő logikáját tartalmazó modulok
 ├── extract_content.py                # Általános tartalomkinyerő
 ├── facebook_parser.py                # Facebook-specifikus parser
-└── test_intelligent_parser.py       # Tesztfájl a funkcionalitás bemutatására
+└── test_intelligent_parser.py        # Tesztfájl a funkcionalitás bemutatására
 ```
 
 ## Hibaelhárítás
