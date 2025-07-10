@@ -14,10 +14,6 @@ from ..facebook_parser import FacebookParser
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     
-    __gestures__ = {
-        "kb:nvda+a": "script_readWebContent",
-    }
-    
     def __init__(self):
         super(GlobalPlugin, self).__init__()
         self.facebook_parser = FacebookParser()
@@ -94,3 +90,9 @@ GlobalPlugin.script_readWebContent.category = "PapaVoice"
 GlobalPlugin.script_readWebContent.description = (
     "Reads the main content of the current web page intelligently."
 ) 
+
+__gestures__ = {
+    "kb:nvda+a": "readWebContent",
+}
+
+GlobalPlugin.gestures = __gestures__
