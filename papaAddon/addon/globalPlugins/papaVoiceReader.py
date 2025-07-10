@@ -73,4 +73,4 @@ GlobalPlugin.script_readWebContent.category = "PapaVoice"
 GlobalPlugin.script_readWebContent.description = (
     "Reads the main content of the current web page intelligently."
 )
-GlobalPlugin.script_readWebContent.gesture = "kb:nvda+alt+i" 
+GlobalPlugin.script_readWebContent.gesture = "kb:nvda+a" 
