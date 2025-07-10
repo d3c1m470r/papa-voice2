@@ -16,6 +16,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     def __init__(self):
         super(GlobalPlugin, self).__init__()
         self.facebook_parser = FacebookParser()
+        # Remove the existing NVDA+A gesture
+        try:
+            self.removeGestureBinding("kb:nvda+a")
+        except:
+            pass
 
     def is_facebook_url(self, url):
         """Check if a URL is a Facebook URL."""
@@ -23,13 +28,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
     def script_readWebContent(self, gesture):
         try:
+            ui.message("PapaVoice activated")
             browser = api.getForegroundObject()
-            if browser.role == api.controlTypes.ROLE_PANE:
-                browser = browser.parent
-            url = browser.value
+            url = None
+            
+            # Try different ways to get the URL
+            if hasattr(browser, 'value') and browser.value:
+                url = browser.value
+            elif hasattr(browser, 'URL') and browser.URL:
+                url = browser.URL
+            else:
+                # Try to find the address bar
+                parent = browser
+                while parent and not url:
+                    if hasattr(parent, 'value') and parent.value and ('http' in parent.value or 'www' in parent.value):
+                        url = parent.value
+                        break
+                    parent = parent.parent
+            
             if not url:
-                ui.message("Could not get URL from the browser.")
+                ui.message("Could not get URL from the browser. Make sure you're in a web browser.")
                 return
+            
+            ui.message(f"Processing URL: {url[:50]}...")
 
             if self.is_facebook_url(url):
                 content = self.facebook_parser.parse(url)
@@ -73,4 +94,12 @@ GlobalPlugin.script_readWebContent.category = "PapaVoice"
 GlobalPlugin.script_readWebContent.description = (
     "Reads the main content of the current web page intelligently."
 )
-GlobalPlugin.script_readWebContent.gesture = "kb:nvda+a" 
+GlobalPlugin.script_readWebContent.gesture = "kb:nvda+a"
+
+# Add fallback gesture
+GlobalPlugin.script_readWebContentFallback = GlobalPlugin.script_readWebContent
+GlobalPlugin.script_readWebContentFallback.category = "PapaVoice"
+GlobalPlugin.script_readWebContentFallback.description = (
+    "Reads the main content of the current web page intelligently (fallback)."
+)
+GlobalPlugin.script_readWebContentFallback.gesture = "kb:nvda+a+s" 
