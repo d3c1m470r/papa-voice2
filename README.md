@@ -12,15 +12,24 @@ Ez egy kiegészítő (add-on) az NVDA képernyőolvasó szoftverhez, amelynek c�
 
 ## Telepítés
 
-A telepítéshez valószínűleg egy látó személy (családtag, barát) segítségére lesz szükség, mivel a fájlokat a megfelelő mappába kell másolni.
+### Automatikus telepítés (Ajánlott)
+
+1.  Töltse le a **`papa-voice-reader.nvda-addon`** fájlt a projekt [GitHub oldaláról](https://github.com/d3c1m470r/papa-voice).
+2.  Kattintson duplán a letöltött `.nvda-addon` fájlra.
+3.  Az NVDA automatikusan megkérdezi, hogy telepíteni szeretné-e a kiegészítőt. Válassza az "Igen" opciót.
+4.  Indítsa újra az NVDA-t amikor arra kéri.
+
+### Kézi telepítés (Ha az automatikus nem működik)
+
+Ha valamilyen okból az automatikus telepítés nem működik:
 
 1.  A "Code" gombra kattintva válassza a "Download ZIP" opciót a projekt letöltéséhez.
 2.  Csomagolja ki a letöltött `.zip` fájlt egy tetszőleges mappába.
 3.  Indítsa el az NVDA-t a gépen.
 4.  Nyomja le az **`Insert+N`** billentyűket az NVDA menü megnyitásához.
 5.  A nyíl billentyűkkel navigáljon az `Eszközök` menüponthoz, majd azon belül a `Kiegészítők kezelése` opcióra.
-6.  A megnyíló ablakban használja a `Tab` billentyűt, amíg el nem éri a `Kiegészítő-mappa megnyitása` gombot, majd nyomjon `Enter`-t.
-7.  A felugró mappába másolja be a 2. pontban kicsomagolt **`papa-voice-reader`** mappát.
+6.  A megnyíló ablakban használja a `Tab` billentyűt, amíg el nem éri a `Telepítés...` gombot, majd nyomjon `Enter`-t.
+7.  Keresse meg és válassza ki a kicsomagolt mappából a **`papa-voice-reader.nvda-addon`** fájlt.
 8.  Indítsa újra az NVDA-t.
 
 ## Használat
@@ -62,14 +71,16 @@ A billentyűkombináció (`Insert+J`) megváltoztatható az NVDA beállításaib
 ### Fájlstruktúra
 
 ```
-papa-voice-reader/          # NVDA kiegészítő mappa
+papa-voice-reader.nvda-addon   # Telepíthető kiegészítő csomag
+papa-voice-reader/             # NVDA kiegészítő forrásmappa
 ├── addon/
-│   ├── __init__.py         # Fő plugin kód
-│   └── lib/                # Csomagolt függőségek
-├── manifest.ini            # NVDA kiegészítő metaadatok
-src/                        # Fejlesztési fájlok
-├── extract_content.py      # Általános tartalomkinyerő
-└── facebook_parser.py      # Facebook-specifikus parser
+│   ├── __init__.py            # Fő plugin kód
+│   └── lib/                   # Csomagolt függőségek
+├── manifest.ini               # NVDA kiegészítő metaadatok
+src/                           # Fejlesztési fájlok
+├── extract_content.py         # Általános tartalomkinyerő
+├── facebook_parser.py         # Facebook-specifikus parser
+└── test_intelligent_parser.py # Tesztfájl a funkcionalitás bemutatására
 ```
 
 ## Hibaelhárítás
@@ -92,6 +103,12 @@ src/                        # Fejlesztési fájlok
 - Próbálja meg másik weboldallal
 - Indítsa újra az NVDA-t
 
+### Telepítési problémák
+
+- Győződjön meg róla, hogy az NVDA fut a telepítés során
+- Próbálja meg adminisztrátori jogokkal futtatni az NVDA-t
+- Ellenőrizze, hogy a letöltött fájl neve `.nvda-addon` végződéssel rendelkezik
+
 ## Jövőbeli fejlesztések
 
 - Több közösségi média platform támogatása (Instagram, Twitter/X)
@@ -102,3 +119,9 @@ src/                        # Fejlesztési fájlok
 ## Támogatás és közreműködés
 
 Ez a projekt nyílt forráskódú és a közösség közreműködését várja. Ha hibát talál vagy javaslatot szeretne tenni, használja a GitHub Issues funkciót.
+
+**Fejlesztő kontakt**: Ez egy közösségi projekt, a GitHub-on keresztül lehet kapcsolatba lépni.
+
+## Licenc
+
+Ez a projekt az MIT licenc alatt áll, ami azt jelenti, hogy szabadon használható, módosítható és terjeszthető.
