@@ -14,10 +14,14 @@ Ez egy kiegészítő (add-on) az NVDA képernyőolvasó szoftverhez, amelynek c�
 
 ### Automatikus telepítés (Ajánlott)
 
-1.  Töltse le a **`papa-voice-reader.nvda-addon`** fájlt a projekt [GitHub oldaláról](https://github.com/d3c1m470r/papa-voice).
+**Windows-kompatibilis verzió (AJÁNLOTT):**
+
+1.  Töltse le a **`papa-voice-reader-windows.nvda-addon`** fájlt a projekt [GitHub oldaláról](https://github.com/d3c1m470r/papa-voice).
 2.  Kattintson duplán a letöltött `.nvda-addon` fájlra.
 3.  Az NVDA automatikusan megkérdezi, hogy telepíteni szeretné-e a kiegészítőt. Válassza az "Igen" opciót.
 4.  Indítsa újra az NVDA-t amikor arra kéri.
+
+**Megjegyzés:** Ha a fenti `-windows` verzió nem működik, próbálja meg az eredeti `papa-voice-reader.nvda-addon` fájlt ugyanezzel a módszerrel.
 
 ### Kézi telepítés (Ha az automatikus nem működik)
 
@@ -29,7 +33,7 @@ Ha valamilyen okból az automatikus telepítés nem működik:
 4.  Nyomja le az **`Insert+N`** billentyűket az NVDA menü megnyitásához.
 5.  A nyíl billentyűkkel navigáljon az `Eszközök` menüponthoz, majd azon belül a `Kiegészítők kezelése` opcióra.
 6.  A megnyíló ablakban használja a `Tab` billentyűt, amíg el nem éri a `Telepítés...` gombot, majd nyomjon `Enter`-t.
-7.  Keresse meg és válassza ki a kicsomagolt mappából a **`papa-voice-reader.nvda-addon`** fájlt.
+7.  Keresse meg és válassza ki a kicsomagolt mappából a **`papa-voice-reader-windows.nvda-addon`** fájlt.
 8.  Indítsa újra az NVDA-t.
 
 ## Használat
@@ -63,24 +67,25 @@ A billentyűkombináció (`Insert+J`) megváltoztatható az NVDA beállításaib
 ### Technikai részletek
 
 - **Alapnyelv**: Python 3
-- **Függőségek**: requests, readability-lxml, html2text, beautifulsoup4
+- **Függőségek**: requests, html2text, beautifulsoup4 (tisztán Python könyvtárak)
 - **Architektúra**: NVDA Global Plugin
 - **Facebook támogatás**: DOM-alapú bejegyzés-felismerés, hirdetésszűrés
-- **Tartalomkinyerés**: Readability algoritmus híroldalakhoz, egyedi parser Facebookhoz
+- **Tartalomkinyerés**: Egyszerű heurisztika híroldalakhoz, egyedi parser Facebookhoz
 
 ### Fájlstruktúra
 
 ```
-papa-voice-reader.nvda-addon   # Telepíthető kiegészítő csomag
-papa-voice-reader/             # NVDA kiegészítő forrásmappa
+papa-voice-reader-windows.nvda-addon  # Telepíthető Windows-kompatibilis csomag (AJÁNLOTT)
+papa-voice-reader.nvda-addon          # Eredeti csomag (Linux könyvtárakkal)
+papa-voice-reader/                    # NVDA kiegészítő forrásmappa
 ├── addon/
-│   ├── __init__.py            # Fő plugin kód
-│   └── lib/                   # Csomagolt függőségek
-├── manifest.ini               # NVDA kiegészítő metaadatok
-src/                           # Fejlesztési fájlok
-├── extract_content.py         # Általános tartalomkinyerő
-├── facebook_parser.py         # Facebook-specifikus parser
-└── test_intelligent_parser.py # Tesztfájl a funkcionalitás bemutatására
+│   ├── __init__.py                   # Fő plugin kód
+│   └── lib/                          # Csomagolt függőségek
+├── manifest.ini                      # NVDA kiegészítő metaadatok
+src/                                  # Fejlesztési fájlok
+├── extract_content.py                # Általános tartalomkinyerő
+├── facebook_parser.py                # Facebook-specifikus parser
+└── test_intelligent_parser.py       # Tesztfájl a funkcionalitás bemutatására
 ```
 
 ## Hibaelhárítás
@@ -105,6 +110,7 @@ src/                           # Fejlesztési fájlok
 
 ### Telepítési problémák
 
+- **"Damaged or unsupported" hiba**: Használja a `papa-voice-reader-windows.nvda-addon` verziót
 - Győződjön meg róla, hogy az NVDA fut a telepítés során
 - Próbálja meg adminisztrátori jogokkal futtatni az NVDA-t
 - Ellenőrizze, hogy a letöltött fájl neve `.nvda-addon` végződéssel rendelkezik
