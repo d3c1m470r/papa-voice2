@@ -12,29 +12,12 @@ Ez egy kiegészítő (add-on) az NVDA képernyőolvasó szoftverhez, amelynek c�
 
 ## Telepítés
 
-### Automatikus telepítés (Ajánlott)
+**Telepíthető verzió (AJÁNLOTT):**
 
-**Windows-kompatibilis verzió (AJÁNLOTT):**
-
-1.  Töltse le a **`papa-voice-reader-windows.nvda-addon`** fájlt a projekt [GitHub oldaláról](https://github.com/d3c1m470r/papa-voice).
+1.  Töltse le a **`papa-voice-reader.nvda-addon`** fájlt a projekt [GitHub oldaláról](https://github.com/d3c1m470r/papa-voice).
 2.  Kattintson duplán a letöltött `.nvda-addon` fájlra.
 3.  Az NVDA automatikusan megkérdezi, hogy telepíteni szeretné-e a kiegészítőt. Válassza az "Igen" opciót.
 4.  Indítsa újra az NVDA-t amikor arra kéri.
-
-**Megjegyzés:** Ha a fenti `-windows` verzió nem működik, próbálja meg az eredeti `papa-voice-reader.nvda-addon` fájlt ugyanezzel a módszerrel.
-
-### Kézi telepítés (Ha az automatikus nem működik)
-
-Ha valamilyen okból az automatikus telepítés nem működik:
-
-1.  A "Code" gombra kattintva válassza a "Download ZIP" opciót a projekt letöltéséhez.
-2.  Csomagolja ki a letöltött `.zip` fájlt egy tetszőleges mappába.
-3.  Indítsa el az NVDA-t a gépen.
-4.  Nyomja le az **`Insert+N`** billentyűket az NVDA menü megnyitásához.
-5.  A nyíl billentyűkkel navigáljon az `Eszközök` menüponthoz, majd azon belül a `Kiegészítők kezelése` opcióra.
-6.  A megnyíló ablakban használja a `Tab` billentyűt, amíg el nem éri a `Telepítés...` gombot, majd nyomjon `Enter`-t.
-7.  Keresse meg és válassza ki a kicsomagolt mappából a **`papa-voice-reader-windows.nvda-addon`** fájlt.
-8.  Indítsa újra az NVDA-t.
 
 ## Használat
 
@@ -75,8 +58,7 @@ A billentyűkombináció (`Insert+J`) megváltoztatható az NVDA beállításaib
 ### Fájlstruktúra
 
 ```
-papa-voice-reader-windows.nvda-addon  # Telepíthető Windows-kompatibilis csomag (AJÁNLOTT)
-papa-voice-reader.nvda-addon          # Eredeti csomag (Linux könyvtárakkal)
+papa-voice-reader.nvda-addon          # Telepíthető kiegészítő csomag (Windows + Linux)
 papa-voice-reader/                    # NVDA kiegészítő forrásmappa
 ├── addon/
 │   ├── __init__.py                   # Fő plugin kód
@@ -110,7 +92,7 @@ src/                                  # Fejlesztési fájlok
 
 ### Telepítési problémák
 
-- **"Damaged or unsupported" hiba**: Használja a `papa-voice-reader-windows.nvda-addon` verziót
+- **"Damaged or unsupported" hiba**: Győződjön meg róla, hogy a `papa-voice-reader.nvda-addon` fájlt tölti le (ne más fájlt vagy mappát)
 - Győződjön meg róla, hogy az NVDA fut a telepítés során
 - Próbálja meg adminisztrátori jogokkal futtatni az NVDA-t
 - Ellenőrizze, hogy a letöltött fájl neve `.nvda-addon` végződéssel rendelkezik
