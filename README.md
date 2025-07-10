@@ -62,12 +62,11 @@ papa-voice-reader.nvda-addon          # Telepíthető kiegészítő csomag (Wind
 papa-voice-reader/                    # NVDA kiegészítő forrásmappa
 ├── addon/
 │   ├── __init__.py                   # Fő plugin kód
+│   ├── extract_content.py            # Általános tartalomkinyerő
+│   ├── facebook_parser.py            # Facebook-specifikus parser
+│   ├── test_intelligent_parser.py    # Tesztfájl a funkcionalitás bemutatására
 │   └── lib/                          # Csomagolt függőségek
 ├── manifest.ini                      # NVDA kiegészítő metaadatok
-src/                                  # A kiegészítő logikáját tartalmazó modulok
-├── extract_content.py                # Általános tartalomkinyerő
-├── facebook_parser.py                # Facebook-specifikus parser
-└── test_intelligent_parser.py        # Tesztfájl a funkcionalitás bemutatására
 ```
 
 ## Hibaelhárítás
