@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Intelligent Hungarian article reader that skips clutter 1.0.4</title>
+</head>
+<body>
+<h1>Papa's Voice Reader</h1>
+<p>Ez egy kiegészítő (add-on) az NVDA képernyőolvasó szoftverhez, amelynek célja, hogy segítse a látássérült felhasználókat a weboldalak és Facebook tartalmának intelligens felolvasásával.</p>
+<h2>Főbb funkciók</h2>
+<ul>
+<li><strong>Intelligens tartalomfelismerés</strong>: Automatikusan felismeri, hogy a weboldal Facebook-e vagy híroldal, és ennek megfelelően optimalizált módszerrel olvassa fel a tartalmat</li>
+<li><strong>Facebook támogatás</strong>: Kifejezetten Facebook bejegyzések felolvasására optimalizálva, kihagyja a hirdetéseket és csak a releváns tartalmat olvassa fel</li>
+<li><strong>Híroldalak támogatása</strong>: Általános híroldalak és blogok fő tartalmának intelligens kinyerése</li>
+<li><strong>Magyar nyelv támogatás</strong>: Teljes magyar nyelvi támogatás, beleértve a magyar hirdetések felismerését is</li>
+<li><strong>Egyszerű kezelés</strong>: Csak egy billentyűkombináció (<code>Insert+J</code>) a tartalom felolvasásához</li>
+</ul>
+<h2>Telepítés</h2>
+<p><strong>Telepíthető verzió (AJÁNLOTT):</strong></p>
+<ol>
+<li>Töltse le a <strong><code>papa-voice-reader.nvda-addon</code></strong> fájlt a projekt <a href="https://github.com/d3c1m470r/papa-voice">GitHub oldaláról</a>.</li>
+<li>Kattintson duplán a letöltött <code>.nvda-addon</code> fájlra.</li>
+<li>Az NVDA automatikusan megkérdezi, hogy telepíteni szeretné-e a kiegészítőt. Válassza az "Igen" opciót.</li>
+<li>Indítsa újra az NVDA-t amikor arra kéri.</li>
+</ol>
+<h2>Használat</h2>
+<h3>Alapvető használat</h3>
+<ol>
+<li>Nyisson meg egy weboldalt a böngészőjében (Firefox, Chrome, Edge).</li>
+<li>Navigáljon a címsorba, vagy kattintson egy linkre.</li>
+<li>Nyomja le az <strong><code>Insert+J</code></strong> billentyűket.</li>
+<li>A kiegészítő automatikusan felismeri a weboldal típusát és elkezdi felolvasni a főbb tartalmat.</li>
+</ol>
+<h3>Támogatott weboldalak</h3>
+<ul>
+<li><strong>Facebook</strong>: Bejegyzések, státuszok, hírek (hirdetések kihagyásával)</li>
+<li><strong>Híroldalak</strong>: 444.hu, index.hu, hvg.hu, és egyéb magyar és nemzetközi híroldalak</li>
+<li><strong>Blogok</strong>: Általános blog bejegyzések</li>
+<li><strong>Cikkek</strong>: Online újságcikkek és magazinok</li>
+</ul>
+<h3>Billentyűkombináció megváltoztatása</h3>
+<p>A billentyűkombináció (<code>Insert+J</code>) megváltoztatható az NVDA beállításaiban:</p>
+<ol>
+<li>Nyomja le az <code>Insert+N</code> billentyűket.</li>
+<li>Válassza a <code>Beállítások</code> &gt; <code>Beviteli parancsok...</code> menüpontot.</li>
+<li>Keresse meg a "Papa's Voice Reader" kategóriát.</li>
+<li>Jelölje ki a "readArticle" funkciót.</li>
+<li>Klikkeljen a "Hozzáadás" gombra és állítson be egy új billentyűkombinációt.</li>
+</ol>
+<h2>Fejlesztési információk</h2>
+<h3>Technikai részletek</h3>
+<ul>
+<li><strong>Alapnyelv</strong>: Python 3</li>
+<li><strong>Függőségek</strong>: requests, html2text, beautifulsoup4, readability-lxml (a <code>lib</code> mappában csomagolva)</li>
+<li><strong>Architektúra</strong>: NVDA Global Plugin</li>
+<li><strong>Facebook támogatás</strong>: DOM-alapú bejegyzés-felismerés, hirdetésszűrés</li>
+<li><strong>Tartalomkinyerés</strong>: Egyszerű heurisztika híroldalakhoz, egyedi parser Facebookhoz</li>
+</ul>
+<h3>Fájlstruktúra</h3>
+<p><code>papa-voice-reader.nvda-addon          # Telepíthető kiegészítő csomag (Windows + Linux)
+papa-voice-reader/                    # NVDA kiegészítő forrásmappa
+├── addon/
+│   ├── __init__.py                   # Fő plugin kód
+│   ├── extract_content.py            # Általános tartalomkinyerő
+│   ├── facebook_parser.py            # Facebook-specifikus parser
+│   ├── test_intelligent_parser.py    # Tesztfájl a funkcionalitás bemutatására
+│   └── lib/                          # Csomagolt függőségek
+├── manifest.ini                      # NVDA kiegészítő metaadatok</code></p>
+<h2>Hibaelhárítás</h2>
+<h3>"No URL found" üzenet</h3>
+<ul>
+<li>Ellenőrizze, hogy a böngésző címsorában van-e URL</li>
+<li>Próbáljon meg egy linkre kattintani, majd használni a funkciót</li>
+<li>Egyes webhelyek esetén frissítse az oldalt</li>
+</ul>
+<h3>"Error reading content" üzenet</h3>
+<ul>
+<li>Ellenőrizze az internetkapcsolatot</li>
+<li>Egyes weboldalak blokkolhatják az automatikus hozzáférést</li>
+<li>Próbáljon meg egy másik weboldalt</li>
+</ul>
+<h3>Nincs felolvasás</h3>
+<ul>
+<li>Ellenőrizze, hogy az NVDA be van-e kapcsolva</li>
+<li>Próbálja meg másik weboldallal</li>
+<li>Indítsa újra az NVDA-t</li>
+</ul>
+<h3>Telepítési problémák</h3>
+<ul>
+<li><strong>"Damaged or unsupported" hiba</strong>: Győződjön meg róla, hogy a <code>papa-voice-reader.nvda-addon</code> fájlt tölti le (ne más fájlt vagy mappát)</li>
+<li>Győződjön meg róla, hogy az NVDA fut a telepítés során</li>
+<li>Próbálja meg adminisztrátori jogokkal futtatni az NVDA-t</li>
+<li>Ellenőrizze, hogy a letöltött fájl neve <code>.nvda-addon</code> végződéssel rendelkezik</li>
+</ul>
+<h2>Jövőbeli fejlesztések</h2>
+<ul>
+<li>Több közösségi média platform támogatása (Instagram, Twitter/X)</li>
+<li>Jobb hibakezelés és felhasználói visszajelzések</li>
+<li>Tartalom mentése későbbi olvasáshoz</li>
+<li>Testreszabható tartalomszűrés</li>
+</ul>
+<h2>Támogatás és közreműködés</h2>
+<p>Ez a projekt nyílt forráskódú és a közösség közreműködését várja. Ha hibát talál vagy javaslatot szeretne tenni, használja a GitHub Issues funkciót.</p>
+<p><strong>Fejlesztő kontakt</strong>: Ez egy közösségi projekt, a GitHub-on keresztül lehet kapcsolatba lépni.</p>
+<h2>Licenc</h2>
+<p>Ez a projekt az MIT licenc alatt áll, ami azt jelenti, hogy szabadon használható, módosítható és terjeszthető.</p>
+</body>
+</html>
