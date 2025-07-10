@@ -9,8 +9,8 @@ import api
 import braille
 
 # Project-specific imports
-from ..extract_content import extract_article_content
-from ..facebook_parser import FacebookParser
+from papaVoiceReader.extract_content import extract_article_content
+from papaVoiceReader.facebook_parser import FacebookParser
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     

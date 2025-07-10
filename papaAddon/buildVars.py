@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	"addon_description": _("Reads article content aloud, skipping ads and menus."),
 	# version
-	"addon_version": "1.1.1",
+	"addon_version": "1.1.2",
 	# Author(s)
 	"addon_author": "fagyhalal",
 	# URL for the add-on documentation support
