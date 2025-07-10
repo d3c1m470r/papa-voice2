@@ -13,14 +13,14 @@ from ..extract_content import extract_article_content
 from ..facebook_parser import FacebookParser
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+    
+    __gestures__ = {
+        "kb:nvda+a": "readWebContent",
+    }
+    
     def __init__(self):
         super(GlobalPlugin, self).__init__()
         self.facebook_parser = FacebookParser()
-        # Remove the existing NVDA+A gesture
-        try:
-            self.removeGestureBinding("kb:nvda+a")
-        except:
-            pass
 
     def is_facebook_url(self, url):
         """Check if a URL is a Facebook URL."""
@@ -93,13 +93,4 @@ def _paginate(text: str, max_len: int):
 GlobalPlugin.script_readWebContent.category = "PapaVoice"
 GlobalPlugin.script_readWebContent.description = (
     "Reads the main content of the current web page intelligently."
-)
-GlobalPlugin.script_readWebContent.gesture = "kb:nvda+a"
-
-# Add fallback gesture
-GlobalPlugin.script_readWebContentFallback = GlobalPlugin.script_readWebContent
-GlobalPlugin.script_readWebContentFallback.category = "PapaVoice"
-GlobalPlugin.script_readWebContentFallback.description = (
-    "Reads the main content of the current web page intelligently (fallback)."
-)
-GlobalPlugin.script_readWebContentFallback.gesture = "kb:nvda+a+s" 
+) 
