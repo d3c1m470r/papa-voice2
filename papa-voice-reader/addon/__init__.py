@@ -90,5 +90,5 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
     # Assign a gesture to the script
     __gestures = {
-        "kb:nvda+shift+u": "readArticle",
+        "kb:nvda+j": "readArticle",
     } 
