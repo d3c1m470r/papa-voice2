@@ -1,54 +1,54 @@
-INFO - __main__ (19:53:40.019) - MainThread (10232):
+INFO - __main__ (20:09:15.083) - MainThread (256):
 Starting NVDA version 2025.1.2 x86
-INFO - core.main (19:53:40.086) - MainThread (10232):
+INFO - core.main (20:09:15.151) - MainThread (256):
 Config dir: C:\Users\User\AppData\Roaming\nvda
-INFO - config.ConfigManager._loadConfig (19:53:40.094) - MainThread (10232):
+INFO - config.ConfigManager._loadConfig (20:09:15.157) - MainThread (256):
 Loading config: C:\Users\User\AppData\Roaming\nvda\nvda.ini
-INFO - core.main (19:53:40.863) - MainThread (10232):
+INFO - core.main (20:09:15.955) - MainThread (256):
 Windows version: Windows 10 22H2 (10.0.19045) workstation AMD64
-INFO - core.main (19:53:40.863) - MainThread (10232):
+INFO - core.main (20:09:15.955) - MainThread (256):
 Using Python version 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:00:00) [MSC v.1938 32 bit (Intel)]
-INFO - core.main (19:53:40.867) - MainThread (10232):
+INFO - core.main (20:09:15.955) - MainThread (256):
 Using comtypes version 1.4.6
-INFO - core.main (19:53:40.868) - MainThread (10232):
+INFO - core.main (20:09:15.957) - MainThread (256):
 Using configobj version 5.1.0 with validate version 1.0.1
-INFO - NVDAHelperLocal (19:53:41.110) - MainThread (10232):
-Thread 10232, build\x86\localWin10\oneCoreSpeech.cpp, ocSpeech_initialize, 215:
+INFO - NVDAHelperLocal (20:09:16.110) - MainThread (256):
+Thread 256, build\x86\localWin10\oneCoreSpeech.cpp, ocSpeech_initialize, 215:
 ocSpeech_initialize
 
-INFO - NVDAHelperLocal (19:53:41.110) - MainThread (10232):
-Thread 10232, build\x86\localWin10\oneCoreSpeech.cpp, OcSpeechState::activate, 89:
+INFO - NVDAHelperLocal (20:09:16.110) - MainThread (256):
+Thread 256, build\x86\localWin10\oneCoreSpeech.cpp, OcSpeechState::activate, 89:
 Activating
 
-INFO - NVDAHelperLocal (19:53:41.153) - MainThread (10232):
-Thread 10232, build\x86\localWin10\oneCoreSpeech.cpp, preventEndUtteranceSilence_, 443:
+INFO - NVDAHelperLocal (20:09:16.155) - MainThread (256):
+Thread 256, build\x86\localWin10\oneCoreSpeech.cpp, preventEndUtteranceSilence_, 443:
 AppendedSilence supported
 
-INFO - synthDriverHandler.setSynth (19:53:41.157) - MainThread (10232):
+INFO - synthDriverHandler.setSynth (20:09:16.159) - MainThread (256):
 Loaded synthDriver oneCore
-WARNING - mathPres.initialize (19:53:41.165) - MainThread (10232):
+WARNING - mathPres.initialize (20:09:16.168) - MainThread (256):
 MathPlayer 4 not available
-INFO - core._setUpWxApp (19:53:41.165) - MainThread (10232):
+INFO - core._setUpWxApp (20:09:16.168) - MainThread (256):
 Using wx version 4.2.2 msw (phoenix) wxWidgets 3.2.6 with six version 1.17.0
-INFO - brailleInput.initialize (19:53:41.165) - MainThread (10232):
+INFO - brailleInput.initialize (20:09:16.170) - MainThread (256):
 Braille input initialized
-INFO - braille.initialize (19:53:41.165) - MainThread (10232):
+INFO - braille.initialize (20:09:16.170) - MainThread (256):
 Using liblouis version 3.33.0
-INFO - braille.initialize (19:53:41.165) - MainThread (10232):
+INFO - braille.initialize (20:09:16.170) - MainThread (256):
 Using pySerial version 3.5
-INFO - braille.BrailleHandler._setDisplay (19:53:41.169) - MainThread (10232):
+INFO - braille.BrailleHandler._setDisplay (20:09:16.172) - MainThread (256):
 Loaded braille display driver 'noBraille', current display has 0 cells.
-DEBUGWARNING - hwPortUtils.listUsbDevices (19:53:41.169) - ThreadPoolExecutor-0_0 (11884):
+DEBUGWARNING - hwPortUtils.listUsbDevices (20:09:16.174) - ThreadPoolExecutor-0_0 (10216):
 Couldn't get DEVPKEY_Device_BusReportedDeviceDesc for {'hardwareID': 'USB\\VID_8087&PID_0032&REV_0000', 'usbID': 'VID_8087&PID_0032', 'devicePath': '\\\\?\\usb#vid_8087&pid_0032#5&1e7d8db7&0&10#{a5dcbf10-6530-11d2-901f-00c04fb951ed}'}: [WinError 1168] Az elem nem található.
-INFO - core.main (19:53:41.359) - MainThread (10232):
+INFO - core.main (20:09:16.379) - MainThread (256):
 Java Access Bridge support initialized
-INFO - UIAHandler.UIAHandler.MTAThreadFunc (19:53:41.458) - UIAHandler.UIAHandler.MTAThread (13892):
+INFO - UIAHandler.UIAHandler.MTAThreadFunc (20:09:16.477) - UIAHandler.UIAHandler.MTAThread (4228):
 UIAutomation: IUIAutomation6
-DEBUGWARNING - inputCore.InputManager.loadUserGestureMap (19:53:41.574) - MainThread (10232):
+DEBUGWARNING - inputCore.InputManager.loadUserGestureMap (20:09:16.624) - MainThread (256):
 No user gesture map
-DEBUGWARNING - touchHandler.touchSupported (19:53:41.599) - MainThread (10232):
+DEBUGWARNING - touchHandler.touchSupported (20:09:16.651) - MainThread (256):
 No touch devices found
-ERROR - globalPluginHandler.listPlugins (19:53:41.599) - MainThread (10232):
+ERROR - globalPluginHandler.listPlugins (20:09:16.651) - MainThread (256):
 Error importing global plugin papaVoiceReader
 Traceback (most recent call last):
   File "globalPluginHandler.pyc", line 23, in listPlugins
@@ -60,13 +60,13 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
   File "C:\Users\User\AppData\Roaming\nvda\addons\papaVoiceReader\globalPlugins\papaVoiceReader.py", line 12, in <module>
-    from ..extract_content import extract_article_content
-ImportError: attempted relative import beyond top-level package
-INFO - core.main (19:53:41.603) - MainThread (10232):
+    from papaVoiceReader.extract_content import extract_article_content
+ModuleNotFoundError: No module named 'papaVoiceReader'
+INFO - core.main (20:09:16.655) - MainThread (256):
 NVDA initialized
-IO - speech.speech.speak (19:53:41.751) - MainThread (10232):
+IO - speech.speech.speak (20:09:16.802) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Üdvözli az NVDA', 'párbeszédpanel', 'Üdvözli az NVDA\nAz NVDA legtöbb billentyűparancsához szükség van az NVDA gomb nyomvatartására is.\nAlapértelmezés szerint az Insert és a numerikus Insert gombok egyaránt használhatók NVDA gombként.\nDe a Caps Lock billentyűt is beállíthatja NVDA gombként.\nAz NVDA+n billentyűparanccsal bárhonnan elérheti az NVDA menüjét.\nEbben a menüben elérheti az NVDA beállításait és egyéb funkcióit.', CancellableSpeech (still valid)]
-DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (19:53:41.755) - MainThread (10232):
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (20:09:16.806) - MainThread (256):
 Error loading 'cldr' symbols for locale 'hu_HU'
 Traceback (most recent call last):
   File "characterProcessing.pyc", line 421, in _getSpeechSymbolsForLocale
@@ -74,7 +74,7 @@ Traceback (most recent call last):
   File "characterProcessing.pyc", line 68, in fetchLocaleData
   File "characterProcessing.pyc", line 833, in _initSymbols
 FileNotFoundError: No 'cldr' data for locale 'hu_HU'
-DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (19:53:41.759) - MainThread (10232):
+DEBUGWARNING - characterProcessing._getSpeechSymbolsForLocale (20:09:16.810) - MainThread (256):
 Error loading 'builtin' symbols for locale 'hu_HU'
 Traceback (most recent call last):
   File "characterProcessing.pyc", line 421, in _getSpeechSymbolsForLocale
@@ -82,103 +82,63 @@ Traceback (most recent call last):
   File "characterProcessing.pyc", line 68, in fetchLocaleData
   File "characterProcessing.pyc", line 833, in _initSymbols
 FileNotFoundError: No 'builtin' data for locale 'hu_HU'
-IO - speech.speech.speak (19:53:41.851) - MainThread (10232):
+IO - speech.speech.speak (20:09:16.910) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Beállítások', 'elemcsoport', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:41.851) - MainThread (10232):
+IO - speech.speech.speak (20:09:16.910) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Billentyűzetkiosztás:', 'kombinált listamező', 'Asztali', 'Zárva', 'Alt+', CharacterModeCommand(True), 'b', CharacterModeCommand(False), CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:42.467) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Beállítások']
-IO - speech.speech.speak (19:53:42.512) - MainThread (10232):
+IO - speech.speech.speak (20:09:16.914) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Az NVDA legtöbb billentyűparancsához szükség van az NVDA gomb nyomvatartására is.\nAlapértelmezés szerint az Insert és a numerikus Insert gombok egyaránt használhatók NVDA gombként.\nDe a Caps Lock billentyűt is beállíthatja NVDA gombként.\nAz NVDA+n billentyűparanccsal bárhonnan elérheti az NVDA menüjét.\nEbben a menüben elérheti az NVDA beállításait és egyéb funkcióit.']
+IO - speech.speech.speak (20:09:17.301) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Üdvözli az NVDA Üdvözli az NVDA\nAz NVDA legtöbb billentyűparancsához szükség van az NVDA gomb nyomvatartására is.\nAlapértelmezés szerint az Insert és a numerikus Insert gombok egyaránt használhatók NVDA gombként.\nDe a Caps Lock billentyűt is beállíthatja NVDA gombként.\nAz NVDA+n billentyűparanccsal bárhonnan elérheti az NVDA menüjét.\nEbben a menüben elérheti az NVDA beállításait és egyéb funkcióit.']
-IO - speech.speech.speak (19:53:43.050) - MainThread (10232):
+IO - speech.speech.speak (20:09:17.333) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'A CapsLock billentyű használata NVDA gombként']
+IO - speech.speech.speak (20:09:17.351) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beállítások']
+IO - speech.speech.speak (20:09:17.397) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Jelenjen meg ez a párbeszédpanel az NVDA minden indításakor']
+IO - speech.speech.speak (20:09:17.415) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beállítások']
+IO - speech.speech.speak (20:09:17.441) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Üdvözli az NVDA Üdvözli az NVDA\nAz NVDA legtöbb billentyűparancsához szükség van az NVDA gomb nyomvatartására is.\nAlapértelmezés szerint az Insert és a numerikus Insert gombok egyaránt használhatók NVDA gombként.\nDe a Caps Lock billentyűt is beállíthatja NVDA gombként.\nAz NVDA+n billentyűparanccsal bárhonnan elérheti az NVDA menüjét.\nEbben a menüben elérheti az NVDA beállításait és egyéb funkcióit.']
+IO - speech.speech.speak (20:09:18.162) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Ok']
-IO - speech.speech.speak (19:53:43.247) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.220) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Ok', 'gomb', 'lenyomva', CancellableSpeech (still valid)]
-INFO - config.ConfigManager.save (19:53:43.366) - MainThread (10232):
+INFO - config.ConfigManager.save (20:09:18.301) - MainThread (256):
 Base configuration saved
-IO - speech.speech.speak (19:53:43.415) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub – Mozilla Firefox', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:43.539) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub', 'dokumentum', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:43.543) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'fő régió jelzőpont', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:43.543) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'kattintható', 'fő régió jelzőpont', LangChangeCommand ('en'), 'More file actions', LangChangeCommand ('hu_HU'), 'menügomb', 'Zárva', 'almenü']
-IO - speech.speech.speak (19:53:43.587) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:43.591) - MainThread (10232):
-Speaking [CallbackCommand(name=say-all:lineReached), LangChangeCommand ('hu_HU'), 'menügomb', 'Zárva', 'almenü', LangChangeCommand ('en'), 'More file actions', CallbackCommand(name=say-all:lineReached)]
-IO - speech.speech.speak (19:53:43.595) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'címsor', '2. ']
-IO - speech.speech.speak (19:53:52.867) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'ODU\nInternetelérés']
-IO - speech.speech.speak (19:53:53.087) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'ASUS VP278: Néma']
-IO - speech.speech.speak (19:53:53.297) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'tálca', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:53.497) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Hangerőszabályzó', 'ablak', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:53.497) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Hangerő', 'csúszka', '53', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:53.547) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Hangerő 53']
-IO - speech.speech.speak (19:53:53.927) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Hangerő 53']
-IO - speech.speech.speak (19:53:54.067) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Némító kapcsoló']
-IO - speech.speech.speak (19:53:54.357) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Némító kapcsoló', 'jelölőnégyzet', 'bejelölve', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:54.467) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Nincs bejelölve']
-IO - speech.speech.speak (19:53:55.017) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub – Mozilla Firefox', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:55.077) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub', 'dokumentum', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:55.082) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'menügomb', 'Zárva', 'almenü', LangChangeCommand ('en'), 'More file actions']
-IO - speech.speech.speak (19:53:55.377) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '(Sorry about that, but we can’t show files that are this big right now.)']
-IO - speech.speech.speak (19:53:55.817) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '(Sorry about that, but we can’t show files that are this big right now.)']
-IO - speech.speech.speak (19:53:58.117) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub – Mozilla Firefox']
-IO - speech.speech.speak (19:53:58.367) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Menüsor', 'eszköztár', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:58.377) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Nézet', 'almenü', 'Alt+', CharacterModeCommand(True), 'N', CharacterModeCommand(False), '3 per 7', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:58.390) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '452 millióért vett termőföldet Várkonyi Andrea']
-IO - speech.speech.speak (19:53:58.447) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'papa-voice/papaVoiceReader-1.1.1.nvda-addon at master · d3c1m470r/papa-voice · GitHub', 'dokumentum', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:58.447) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'menügomb', 'Zárva', 'almenü', LangChangeCommand ('en'), 'More file actions']
-IO - speech.speech.speak (19:53:58.652) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.353) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox', CancellableSpeech (still valid)]
+IO - speech.speech.speak (20:09:18.421) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), '452 millióért vett termőföldet Várkonyi Andrea', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:53:58.664) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.427) - MainThread (256):
 Speaking [CallbackCommand(name=say-all:lineReached), LangChangeCommand ('hu_HU'), 'Főcím jelzőpont', 'gomb', 'menu', CallbackCommand(name=say-all:lineReached)]
-IO - speech.speech.speak (19:53:58.670) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.429) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'gomb', 'MENÜ', CallbackCommand(name=say-all:lineReached)]
-IO - speech.speech.speak (19:53:58.670) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.429) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'kattintható', 'hivatkozás', 'CSATLAKOZZ A KÖRHÖZ! ']
-IO - speech.speech.speak (19:53:58.947) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'HIRDETÉS']
-IO - speech.speech.speak (19:53:59.055) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '452 millióért vett termőföldet Várkonyi Andrea']
-IO - inputCore.InputManager.executeGesture (19:53:59.787) - winInputHook (10544):
-Input: kb(desktop):NVDA+a
-IO - speech.speech.speak (19:54:02.991) - MainThread (10232):
+IO - speech.speech.speak (20:09:18.797) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Advertisement https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstVjbdXK4uOFLr7ZG6X26mKwcVI2JnKgi-pbyoiZWwVGzS_vXSzOguAxP_nMPT9u5YYjn266gJar1I2pTrPC6WSXhO0YKLUc6uc28Jk81OERLFieGHT3SnvWduhcsBPLemfG_upVhhJFK5WxdKVspmxvWRLuIGXZUMO4gIqKNTUq9zYDA&sai=AMfl-YTbevzfJC2RELKrVKtg-Cmea4JbPE6QEyyJY9zkABfog_uy3ZjuAc5_izsSOzyIwvNaMKemTzSqCV0A&sig=Cg0ArKJSzI_a1oVqYFof&cry=1&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://adclick.g.doubleclick.net/pcs/click%3Fxai%3DAKAOjsswLZ4hTgx6nj2RLTXXvC7aS7r2ecRrbB64HhgefoXuqJ12-wcztIuJZ5HMI8VEY7h0CyJIZz4eIBZTFv4PdUVVCXY095oEIvUIBbtS9IrqtF_0HyPUQ30nemE4s8g2ZcPHq4MRU1rh57KclL4ecF7CNJL7_xr52lPqvQILGfGy4c_iRLA8niNf4HdPy4hMo00qcV6F3IA85Q95nViXC2-veePHBdgKGW3vR2tVgx6jq8_54UnXzQ4Ld3JjI6TWRsWuk1Jnnh_8SJ5GzzBleetAyDBiAk0FFk1lmpxjJ72jxLNUnmUEdtEKXHR-PLgQBssWJFcBwL88DySWli3OkZARHVCN5TvPK05oB-hor0bs7psl18H4n3-HyPp4aHDwTgUPIGUgkg%26sai%3DAMfl-YRQKTi72BXpYf2_A_Zzoy9Gd4GXDMf2HKFKVkMwpDcBjispwhNXM5Fdip2lRxjNvm8Z9qdQsXtUrD6zoRWsQhsuS1TJaZD34Dioi_AYO8-jzz6fRNygBSIxiOUGnNvtVSKWvb56HVU_t0L3GuF0hg%26sig%3DCg0ArKJSzGz61lm25mPKEAE%26fbs_aeid%3D%255Bgw_fbsaeid%255D%26urlfix%3D1%26adurl%3Dhttps://www.omv.hu/hu/nyeremenyjatek%253Futm_source%253Dcentral_media_24hu_nagyvilag_07_14%2526utm_medium%253DDisplay_Desktop%2526utm_campaign%253DOMV_MaxxMotion_Summer_Promo_July-August_2025%2526utm_content%253D640x360%2526dclid%253D%2525edclid!']
-IO - speech.speech.speak (19:54:03.227) - MainThread (10232):
+IO - speech.speech.speak (20:09:19.077) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Július elsején írták alá azt az adásvételi szerződést, melynek alapján Várkonyi Andrea 452,6 millió forintért vásárol szántókat Farkas Amandától, aki Farkas Sándor fideszes ex-államtitkár lánya. Mészáros Lőrinc felesége aranykalászos gazda, ezért tud szántóföldeket vásárolni. Várkonyi a vételárat nem Farkas Amandának, hanem anyjának, Farkasné Márton Katalinnak kell átutalja.']
-IO - speech.speech.speak (19:54:04.772) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Július elsején írták alá azt az adásvételi szerződést, melynek alapján Várkonyi Andrea 452,6 millió forintért vásárol szántókat Farkas Amandától, aki Farkas Sándor fideszes ex-államtitkár lánya. Mészáros Lőrinc felesége aranykalászos gazda, ezért tud szántóföldeket vásárolni. Várkonyi a vételárat nem Farkas Amandának, hanem anyjának, Farkasné Márton Katalinnak kell átutalja.']
-IO - inputCore.InputManager.executeGesture (19:54:06.619) - winInputHook (10544):
-Input: kb(desktop):NVDA+a
-IO - inputCore.InputManager.executeGesture (19:54:08.251) - winInputHook (10544):
-Input: kb(desktop):NVDA+a
-IO - inputCore.InputManager.executeGesture (19:54:09.701) - winInputHook (10544):
+IO - inputCore.InputManager.executeGesture (20:09:21.613) - winInputHook (9672):
+Input: kb(desktop):NVDA+s
+IO - speech.speech.speak (20:09:21.615) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: on-demand']
+IO - inputCore.InputManager.executeGesture (20:09:22.620) - winInputHook (9672):
+Input: kb(desktop):NVDA+s
+IO - speech.speech.speak (20:09:22.624) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: csendes']
+IO - inputCore.InputManager.executeGesture (20:09:23.653) - winInputHook (9672):
+Input: kb(desktop):NVDA+s
+IO - speech.speech.speak (20:09:23.657) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: hangjelzés']
+IO - inputCore.InputManager.executeGesture (20:09:24.788) - winInputHook (9672):
+Input: kb(desktop):NVDA+s
+IO - speech.speech.speak (20:09:24.792) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: beszéd']
+IO - inputCore.InputManager.executeGesture (20:09:26.741) - winInputHook (9672):
 Input: kb(desktop):NVDA+f1
-INFO - globalCommands.script_navigatorObject_devInfo (19:54:09.794) - MainThread (10232):
+INFO - globalCommands.script_navigatorObject_devInfo (20:09:26.830) - MainThread (256):
 Developer info for navigator object:
 name: '452 millióért vett termőföldet Várkonyi Andrea'
 role: DOCUMENT
@@ -187,7 +147,7 @@ roleText: None
 states: READONLY, FOCUSABLE, FOCUSED
 isFocusable: True
 hasFocus: True
-Python object: <NVDAObjects.Dynamic_DocumentMozillaIAccessible object at 0x0D58AF70>
+Python object: <NVDAObjects.Dynamic_DocumentMozillaIAccessible object at 0x0D039AF0>
 Python class mro: (<class 'NVDAObjects.Dynamic_DocumentMozillaIAccessible'>, <class 'NVDAObjects.IAccessible.mozilla.Document'>, <class 'NVDAObjects.IAccessible.ia2Web.Document'>, <class 'NVDAObjects.IAccessible.mozilla.Mozilla'>, <class 'NVDAObjects.IAccessible.ia2Web.Ia2Web'>, <class 'NVDAObjects.IAccessible.IAccessible'>, <class 'NVDAObjects.window.Window'>, <class 'NVDAObjects.NVDAObject'>, <class 'documentBase.TextContainerObject'>, <class 'baseObject.ScriptableObject'>, <class 'baseObject.AutoPropertyObject'>, <class 'garbageHandler.TrackedObject'>, <class 'object'>)
 description: ''
 location: RectLTWH(left=51, top=157, width=1869, height=883)
@@ -196,7 +156,7 @@ TextInfo: <class 'NVDAObjects.IAccessible.IA2TextTextInfo'>
 appModule: AppModule(appModuleHandler, appName='firefox', processID=6160)
 appModule.productName: 'Firefox'
 appModule.productVersion: '140.0.4'
-appModule.helperLocalBindingHandle: c_long(110405200)
+appModule.helperLocalBindingHandle: c_long(107716144)
 appModule.appArchitecture: 'AMD64'
 windowHandle: 393826
 windowClassName: 'MozillaWindowClass'
@@ -206,7 +166,7 @@ extendedWindowStyle: 256
 windowThreadID: 6268
 windowText: '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox'
 displayText: ''
-IAccessibleObject: <POINTER(IAccessible2) ptr=0x6b199a4 at 1522530>
+IAccessibleObject: <POINTER(IAccessible2) ptr=0x6535134 at cf7c9e0>
 IAccessibleChildID: 0
 IAccessible event parameters: windowHandle=393826, objectID=-4, childID=-1438
 IAccessible accName: '452 millióért vett termőföldet Várkonyi Andrea'
@@ -220,250 +180,94 @@ IAccessible2 role: ROLE_SYSTEM_DOCUMENT
 IAccessible2 states: IA2_STATE_OPAQUE, IA2_STATE_SELECTABLE_TEXT (5120)
 IAccessible2 attributes: 'explicit-name:true;tag:body;class:ggy75a1 _11qegjk0 tz81m00 _1p7jm60 _2yen1f0 jm0ewz0 _3h8rke0 _7djmrl0 _8vfv1e0 e19fld0 _1v3xwj00 _704pyz0 p3llho1 _13jj0ut0 _8b6bxc9 _1dy6oyqvr;display:block;'
 IAccessible2 relations: nodeChildOf * 1, containingTabPane * 1
-DEBUGWARNING - UIAHandler.UIAHandler.getNearestWindowHandle (19:54:09.823) - Dummy-2 (8860):
+DEBUGWARNING - UIAHandler.UIAHandler.getNearestWindowHandle (20:09:26.858) - Dummy-2 (7864):
 error walking up to an element with a valid windowHandle
 Traceback (most recent call last):
   File "UIAHandler\__init__.pyc", line 1343, in getNearestWindowHandle
 _ctypes.COMError: (-2147467259, 'Meghatározatlan hiba', (None, None, None, 0, None))
-IO - speech.speech.speak (19:54:09.844) - MainThread (10232):
+IO - speech.speech.speak (20:09:26.877) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Az NVDA napló megtekintése', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:09.846) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'szerkesztőmező', 'csak olvasható', 'többsoros', CancellableSpeech (still valid), 'INFO - globalCommands.script_navigatorObject_devInfo (19:54:09.794) - MainThread (10232):\r']
-IO - inputCore.InputManager.executeGesture (19:54:13.444) - winInputHook (10544):
-Input: kb(desktop):control+end
-IO - speech.speech.speak (19:54:13.454) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'üres']
-IO - inputCore.InputManager.executeGesture (19:54:16.291) - winInputHook (10544):
-Input: kb(desktop):control+a
-IO - speech.speech.speak (19:54:16.312) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölve']
-IO - speech.speech.speak (19:54:17.415) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölés megszüntetve']
-IO - inputCore.InputManager.executeGesture (19:54:17.819) - winInputHook (10544):
-Input: kb(desktop):control+a
-IO - speech.speech.speak (19:54:17.837) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölve']
-IO - speech.speech.speak (19:54:18.619) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Input: kb(desktop):NVDA+f1\r']
-IO - speech.speech.speak (19:54:18.835) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'INFO - globalCommands.script_navigatorObject_devInfo (19:54:09.794) - MainThread (10232):\r']
-IO - speech.speech.speak (19:54:18.962) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "name: '452 millióért vett termőföldet Várkonyi Andrea'\r"]
-IO - speech.speech.speak (19:54:18.976) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'role: DOCUMENT\r']
-IO - speech.speech.speak (19:54:19.008) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'processID: 6160\r']
-IO - speech.speech.speak (19:54:19.105) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'roleText: None\r']
-IO - speech.speech.speak (19:54:19.175) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'states: READONLY, FOCUSABLE, FOCUSED\r']
-IO - speech.speech.speak (19:54:19.203) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'isFocusable: True\r']
-IO - speech.speech.speak (19:54:19.249) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'hasFocus: True\r']
-IO - speech.speech.speak (19:54:19.280) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Python class mro: (<class 'NVDAObjects.Dynamic_DocumentMozillaIAccessible'>, <class 'NVDAObjects.IAccessible.mozilla.Document'>, <class 'NVDAObjects.IAccessible.ia2Web.Document'>, <class 'NVDAObjects.IAccessible.mozilla.Mozilla'>, <class 'NVDAObjects.IAccessible.ia2Web.Ia2Web'>, <class 'NVDAObjects.IAccessible.IAccessible'>, <class 'NVDAObjects.window.Window'>, <class 'NVDAObjects.NVDAObject'>, <class 'documentBase.TextContainerObject'>, <class 'baseObject.ScriptableObject'>, <class 'baseObject.AutoPropertyObject'>, <class 'garbageHandler.TrackedObject'>, <class 'object'>)\r"]
-IO - speech.speech.speak (19:54:19.329) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'location: RectLTWH(left=51, top=157, width=1869, height=883)\r']
-IO - speech.speech.speak (19:54:19.397) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölés megszüntetve']
-IO - speech.speech.speak (19:54:19.595) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'value: None\r']
-IO - speech.speech.speak (19:54:19.617) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "appModule: AppModule(appModuleHandler, appName='firefox', processID=6160)\r"]
-IO - speech.speech.speak (19:54:19.649) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'appModule.helperLocalBindingHandle: c_long(110405200)\r']
-IO - speech.speech.speak (19:54:19.665) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowHandle: 393826\r']
-IO - speech.speech.speak (19:54:19.698) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowControlID: 0\r']
-IO - inputCore.InputManager.executeGesture (19:54:20.323) - winInputHook (10544):
-Input: kb(desktop):control+a
-IO - speech.speech.speak (19:54:20.345) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölve']
-IO - speech.speech.speak (19:54:20.763) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'extendedWindowStyle: 256\r']
-IO - speech.speech.speak (19:54:20.793) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessibleObject: <POINTER(IAccessible2) ptr=0x6b199a4 at 1522530>\r']
-IO - speech.speech.speak (19:54:20.825) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible accState: STATE_SYSTEM_FOCUSED, STATE_SYSTEM_READONLY, STATE_SYSTEM_FOCUSABLE, STATE_SYSTEM_VALID (1048644)\r']
-IO - speech.speech.speak (19:54:20.856) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible accValue: 'https://444.hu/2025/07/10/452-millioert-vett-termofoldet-varkonyi-andrea'\r"]
-IO - speech.speech.speak (19:54:20.886) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 uniqueID: -1438\r']
-IO - speech.speech.speak (19:54:20.933) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 role: ROLE_SYSTEM_DOCUMENT\r']
-IO - speech.speech.speak (19:54:21.059) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 states: IA2_STATE_OPAQUE, IA2_STATE_SELECTABLE_TEXT (5120)\r']
-IO - speech.speech.speak (19:54:21.183) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible2 attributes: 'explicit-name:true;tag:body;class:ggy75a1 _11qegjk0 tz81m00 _1p7jm60 _2yen1f0 jm0ewz0 _3h8rke0 _7djmrl0 _8vfv1e0 e19fld0 _1v3xwj00 _704pyz0 p3llho1 _13jj0ut0 _8b6bxc9 _1dy6oyqvr;display:block;'\r"]
-IO - speech.speech.speak (19:54:21.317) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 relations: nodeChildOf * 1, containingTabPane * 1\r']
-IO - inputCore.InputManager.executeGesture (19:54:22.435) - winInputHook (10544):
-Input: kb(desktop):control+a
-IO - speech.speech.speak (19:54:22.445) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 relations: nodeChildOf * 1, containingTabPane * 1\r']
-IO - speech.speech.speak (19:54:22.773) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible2 attributes: 'explicit-name:true;tag:body;class:ggy75a1 _11qegjk0 tz81m00 _1p7jm60 _2yen1f0 jm0ewz0 _3h8rke0 _7djmrl0 _8vfv1e0 e19fld0 _1v3xwj00 _704pyz0 p3llho1 _13jj0ut0 _8b6bxc9 _1dy6oyqvr;display:block;'\r"]
-IO - speech.speech.speak (19:54:22.865) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 states: IA2_STATE_OPAQUE, IA2_STATE_SELECTABLE_TEXT (5120)\r']
-IO - speech.speech.speak (19:54:23.030) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölés megszüntetve']
-IO - inputCore.InputManager.executeGesture (19:54:23.203) - winInputHook (10544):
-Input: kb(desktop):control+a
-IO - speech.speech.speak (19:54:23.223) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölve']
-IO - speech.speech.speak (19:54:23.379) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible2 attributes: 'explicit-name:true;tag:body;class:ggy75a1 _11qegjk0 tz81m00 _1p7jm60 _2yen1f0 jm0ewz0 _3h8rke0 _7djmrl0 _8vfv1e0 e19fld0 _1v3xwj00 _704pyz0 p3llho1 _13jj0ut0 _8b6bxc9 _1dy6oyqvr;display:block;'\r"]
-IO - speech.speech.speak (19:54:23.491) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 relations: nodeChildOf * 1, containingTabPane * 1\r']
-IO - speech.speech.speak (19:54:23.966) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible2 attributes: 'explicit-name:true;tag:body;class:ggy75a1 _11qegjk0 tz81m00 _1p7jm60 _2yen1f0 jm0ewz0 _3h8rke0 _7djmrl0 _8vfv1e0 e19fld0 _1v3xwj00 _704pyz0 p3llho1 _13jj0ut0 _8b6bxc9 _1dy6oyqvr;display:block;'\r"]
-IO - speech.speech.speak (19:54:23.986) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 states: IA2_STATE_OPAQUE, IA2_STATE_SELECTABLE_TEXT (5120)\r']
-IO - speech.speech.speak (19:54:24.002) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 role: ROLE_SYSTEM_DOCUMENT\r']
-IO - speech.speech.speak (19:54:24.018) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible2 windowHandle: 393826\r']
-IO - speech.speech.speak (19:54:24.032) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "IAccessible accDescription: ''\r"]
-IO - speech.speech.speak (19:54:24.050) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessible accRole: ROLE_SYSTEM_DOCUMENT\r']
-IO - speech.speech.speak (19:54:24.064) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessibleChildID: 0\r']
-IO - speech.speech.speak (19:54:24.082) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessibleObject: <POINTER(IAccessible2) ptr=0x6b199a4 at 1522530>\r']
-IO - speech.speech.speak (19:54:24.096) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "windowText: '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox'\r"]
-IO - speech.speech.speak (19:54:24.129) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowThreadID: 6268\r']
-IO - speech.speech.speak (19:54:24.144) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'extendedWindowStyle: 256\r']
-IO - speech.speech.speak (19:54:24.613) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '18294 karakter kijelölés megszüntetve']
-IO - speech.speech.speak (19:54:24.717) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowStyle: 399441920\r']
-IO - speech.speech.speak (19:54:24.744) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowControlID: 0\r']
-IO - speech.speech.speak (19:54:24.987) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'D: 0\rwindowStyle: 399 kijelölve']
-IO - speech.speech.speak (19:54:24.993) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowStyle: 399441920\r']
-IO - speech.speech.speak (19:54:25.003) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '4 kijelölve']
-IO - speech.speech.speak (19:54:25.019) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '41 kijelölve']
-IO - speech.speech.speak (19:54:25.035) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '920\rextendedWindowStyle:  kijelölve']
-IO - speech.speech.speak (19:54:25.041) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'extendedWindowStyle: 256\r']
-IO - speech.speech.speak (19:54:25.051) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '2 kijelölve']
-IO - speech.speech.speak (19:54:25.075) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), '56\rwindowThreadID: 6268\r kijelölve']
-IO - speech.speech.speak (19:54:25.083) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "windowText: '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox'\r"]
-IO - speech.speech.speak (19:54:25.156) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "windowText: '452 millióé kijelölve"]
-IO - speech.speech.speak (19:54:25.545) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'r kijelölve']
-IO - speech.speech.speak (19:54:25.559) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IAccessibleObject: <POINTER(IAccessible2) ptr=0x6b199a4 at 1522530>\r']
-IO - speech.speech.speak (19:54:25.587) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "t vett termőföldet Várkonyi Andrea – Mozilla Firefox'\rdisplayText: ''\r kijelölve"]
-IO - speech.speech.speak (19:54:26.019) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "D: 0\rwindowStyle: 399441920\rextendedWindowStyle: 256\rwindowThreadID: 6268\rwindowText: '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox'\rdisplayText: ''\r kijelölés megszüntetve"]
-IO - speech.speech.speak (19:54:26.207) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "windowText: '452 millióért vett termőföldet Várkonyi Andrea – Mozilla Firefox'\r"]
-IO - speech.speech.speak (19:54:26.838) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowThreadID: 6268\r']
-IO - speech.speech.speak (19:54:26.993) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'extendedWindowStyle: 256\r']
-IO - speech.speech.speak (19:54:27.007) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'windowStyle: 399441920\r']
-IO - speech.speech.speak (19:54:27.023) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "windowClassName: 'MozillaWindowClass'\r"]
-IO - speech.speech.speak (19:54:27.039) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'appModule.helperLocalBindingHandle: c_long(110405200)\r']
-IO - speech.speech.speak (19:54:27.056) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "appModule: AppModule(appModuleHandler, appName='firefox', processID=6160)\r"]
-IO - speech.speech.speak (19:54:27.072) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "TextInfo: <class 'NVDAObjects.IAccessible.IA2TextTextInfo'>\r"]
-IO - speech.speech.speak (19:54:27.087) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'location: RectLTWH(left=51, top=157, width=1869, height=883)\r']
-IO - speech.speech.speak (19:54:27.103) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Python class mro: (<class 'NVDAObjects.Dynamic_DocumentMozillaIAccessible'>, <class 'NVDAObjects.IAccessible.mozilla.Document'>, <class 'NVDAObjects.IAccessible.ia2Web.Document'>, <class 'NVDAObjects.IAccessible.mozilla.Mozilla'>, <class 'NVDAObjects.IAccessible.ia2Web.Ia2Web'>, <class 'NVDAObjects.IAccessible.IAccessible'>, <class 'NVDAObjects.window.Window'>, <class 'NVDAObjects.NVDAObject'>, <class 'documentBase.TextContainerObject'>, <class 'baseObject.ScriptableObject'>, <class 'baseObject.AutoPropertyObject'>, <class 'garbageHandler.TrackedObject'>, <class 'object'>)\r"]
-IO - speech.speech.speak (19:54:27.133) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'hasFocus: True\r']
-IO - speech.speech.speak (19:54:27.149) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'states: READONLY, FOCUSABLE, FOCUSED\r']
-IO - speech.speech.speak (19:54:27.166) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'INFO - globalCommands.script_navigatorObject_devInfo (19:54:09.794) - MainThread (10232):\r']
-IO - speech.speech.speak (19:54:27.182) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'IO - inputCore.InputManager.executeGesture (19:54:06.619) - winInputHook (10544):\r']
-IO - speech.speech.speak (19:54:27.198) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'Július elsején írták alá azt az adásvételi szerződést, melynek alapján Várkonyi Andrea 452,6 millió forintért vásárol szántókat Farkas Amandától, aki Farkas Sándor fideszes ex-államtitkár lánya. Mészáros Lőrinc felesége aranykalászos gazda, ezért tud szántóföldeket vásárolni. Várkonyi a vételárat nem Farkas Amandának, hanem anyjának, Farkasné Márton Katalinnak kell átutalja.']\r"]
-IO - speech.speech.speak (19:54:27.260) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Napló']
-IO - speech.speech.speak (19:54:27.276) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Rendszer']
-IO - speech.speech.speak (19:54:27.322) - MainThread (10232):
+IO - speech.speech.speak (20:09:26.879) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'szerkesztőmező', 'csak olvasható', 'többsoros', CancellableSpeech (still valid), 'INFO - globalCommands.script_navigatorObject_devInfo (20:09:26.830) - MainThread (256):\r']
+IO - speech.speech.speak (20:09:28.580) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: beszéd']\r"]
+IO - speech.speech.speak (20:09:28.611) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'IO - inputCore.InputManager.executeGesture (20:09:24.788) - winInputHook (9672):\r']
+IO - speech.speech.speak (20:09:28.641) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'Beszédmód: csendes']\r"]
+IO - speech.speech.speak (20:09:28.657) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'IO - speech.speech.speak (20:09:21.615) - MainThread (256):\r']
+IO - speech.speech.speak (20:09:28.673) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'IO - speech.speech.speak (20:09:19.077) - MainThread (256):\r']
+IO - speech.speech.speak (20:09:28.690) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'Advertisement https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstVjbdXK4uOFLr7ZG6X26mKwcVI2JnKgi-pbyoiZWwVGzS_vXSzOguAxP_nMPT9u5YYjn266gJar1I2pTrPC6WSXhO0YKLUc6uc28Jk81OERLFieGHT3SnvWduhcsBPLemfG_upVhhJFK5WxdKVspmxvWRLuIGXZUMO4gIqKNTUq9zYDA&sai=AMfl-YTbevzfJC2RELKrVKtg-Cmea4JbPE6QEyyJY9zkABfog_uy3ZjuAc5_izsSOzyIwvNaMKemTzSqCV0A&sig=Cg0ArKJSzI_a1oVqYFof&cry=1&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://adclick.g.doubleclick.net/pcs/click%3Fxai%3DAKAOjsswLZ4hTgx6nj2RLTXXvC7aS7r2ecRrbB64HhgefoXuqJ12-wcztIuJZ5HMI8VEY7h0CyJIZz4eIBZTFv4PdUVVCXY095oEIvUIBbtS9IrqtF_0HyPUQ30nemE4s8g2ZcPHq4MRU1rh57KclL4ecF7CNJL7_xr52lPqvQILGfGy4c_iRLA8niNf4HdPy4hMo00qcV6F3IA85Q95nViXC2-veePHBdgKGW3vR2tVgx6jq8_54UnXzQ4Ld3JjI6TWRsWuk1Jnnh_8SJ5GzzBleetAyDBiAk0FFk1lmpxjJ72jxLNUnmUEdtEKXHR-PLgQBssWJFcBwL88DySWli3OkZARHVCN5TvPK05oB-hor0bs7psl18H4n3-HyPp4aHDwTgUPIGUgkg%26sai%3DAMfl-YRQKTi72BXpYf2_A_Zzoy9Gd4GXDMf2HKFKVkMwpDcBjispwhNXM5Fdip2lRxjNvm8Z9qdQsXtUrD6zoRWsQhsuS1TJaZD34Dioi_AYO8-jzz6fRNygBSIxiOUGnNvtVSKWvb56HVU_t0L3GuF0hg%26sig%3DCg0ArKJSzGz61lm25mPKEAE%26fbs_aeid%3D%255Bgw_fbsaeid%255D%26urlfix%3D1%26adurl%3Dhttps://www.omv.hu/hu/nyeremenyjatek%253Futm_source%253Dcentral_media_24hu_nagyvilag_07_14%2526utm_medium%253DDisplay_Desktop%2526utm_campaign%253DOMV_MaxxMotion_Summer_Promo_July-August_2025%2526utm_content%253D640x360%2526dclid%253D%2525edclid!']\r"]
+IO - speech.speech.speak (20:09:28.720) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Az NVDA napló megtekintése']
-IO - speech.speech.speak (19:54:27.542) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Alkalmazás Az aktuális nézet vagy dokumentum manipulálására használatos parancsokat tartalmazza']
-IO - speech.speech.speak (19:54:27.734) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'kattintható', 'hivatkozás', 'CSATLAKOZZ A KÖRHÖZ! ']"]
-IO - speech.speech.speak (19:54:27.756) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'kattintható', 'hivatkozás', 'CSATLAKOZZ A KÖRHÖZ! ']\r"]
-IO - speech.speech.speak (19:54:27.786) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), "Speaking [LangChangeCommand ('hu_HU'), 'kattintható', 'hivatkozás', 'CSATLAKOZZ A KÖRHÖZ! ']"]
-IO - speech.speech.speak (19:54:27.802) - MainThread (10232):
+IO - speech.speech.speak (20:09:28.768) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Rendszer']
+IO - speech.speech.speak (20:09:29.232) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Az NVDA napló megtekintése']
+IO - speech.speech.speak (20:09:29.584) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Napló']
-IO - speech.speech.speak (19:54:28.322) - MainThread (10232):
+IO - speech.speech.speak (20:09:29.836) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Napló', 'almenü', 'Alt+', CharacterModeCommand(True), 'n', CharacterModeCommand(False), CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:29.270) - MainThread (10232):
+IO - speech.speech.speak (20:09:30.297) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Frissítés\tF5', CharacterModeCommand(True), 'f', CharacterModeCommand(False), CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:29.270) - MainThread (10232):
+IO - speech.speech.speak (20:09:30.299) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Frissítés\tF5']
-IO - speech.speech.speak (19:54:29.630) - MainThread (10232):
+IO - speech.speech.speak (20:09:30.850) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként...\tCtrl+S', CharacterModeCommand(True), 'm', CharacterModeCommand(False), CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:29.630) - MainThread (10232):
+IO - speech.speech.speak (20:09:30.852) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként...\tCtrl+S']
-IO - speech.speech.speak (19:54:30.385) - MainThread (10232):
+IO - speech.speech.speak (20:09:31.631) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként', 'párbeszédpanel', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:30.385) - MainThread (10232):
+IO - speech.speech.speak (20:09:31.633) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Fájlnév:', 'kombinált listamező', 'Zárva', CancellableSpeech (still valid)]
-IO - speech.speech.speak (19:54:30.390) - MainThread (10232):
+IO - speech.speech.speak (20:09:31.635) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'szerkesztőmező', 'Alt+', CharacterModeCommand(True), 'l', CharacterModeCommand(False), CancellableSpeech (still valid), 'nvda.log Kijelölve']
-DEBUGWARNING - NVDAObjects.IAccessible.IAccessible._getIA2RelationFirstTarget (19:54:30.540) - MainThread (10232):
+DEBUGWARNING - NVDAObjects.IAccessible.IAccessible._getIA2RelationFirstTarget (20:09:31.812) - MainThread (256):
 Unable to use _getIA2TargetsForRelationsOfType, fallback to _IA2Relations.
-IO - speech.speech.speak (19:54:30.550) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'XVIII (kitűzve)']
-IO - speech.speech.speak (19:54:30.635) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Adobe Media Encoder 2023 (kitűzve)']
-IO - speech.speech.speak (19:54:30.710) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Elhelyezés Az aktuális függőleges pozíció jelzése. Közvetlenül lehet módosítani, ha odébb húzza']
-IO - speech.speech.speak (19:54:30.740) - MainThread (10232):
+IO - speech.speech.speak (20:09:31.818) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Név']
+IO - speech.speech.speak (20:09:32.632) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), ' papaVoiceReader-1.0.1.nvda-addon\n']
+IO - speech.speech.speak (20:09:32.725) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Elemek nézete']
-IO - speech.speech.speak (19:54:34.841) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Részletek ablaktábla']
-IO - speech.speech.speak (19:54:34.871) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'nvda.log']
-IO - speech.speech.speak (19:54:34.911) - MainThread (10232):
+IO - speech.speech.speak (20:09:32.873) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Fájl típusa: Minden fájlt (*.*)']
-IO - speech.speech.speak (19:54:35.170) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Részletek ablaktábla']
-IO - speech.speech.speak (19:54:35.275) - MainThread (10232):
+IO - speech.speech.speak (20:09:32.949) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként']
-IO - speech.speech.speak (19:54:35.366) - MainThread (10232):
+IO - speech.speech.speak (20:09:33.083) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként']
+IO - speech.speech.speak (20:09:33.193) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés']
-IO - speech.speech.speak (19:54:35.440) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként']
-IO - speech.speech.speak (19:54:35.470) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Mégse']
-IO - speech.speech.speak (19:54:35.762) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként']
-IO - speech.speech.speak (19:54:35.781) - MainThread (10232):
-Speaking [LangChangeCommand ('hu_HU'), 'Mentés']
-IO - speech.speech.speak (19:54:35.931) - MainThread (10232):
+IO - speech.speech.speak (20:09:33.538) - MainThread (256):
 Speaking [LangChangeCommand ('hu_HU'), 'Mentés', 'gomb', 'lenyomva', 'Alt+', CharacterModeCommand(True), 'e', CharacterModeCommand(False), CancellableSpeech (still valid)]
+IO - speech.speech.speak (20:09:33.691) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként megerősítése', 'párbeszédpanel', 'nvda.log már létezik.\r\nCserélni kívánja?', CancellableSpeech (still valid)]
+IO - speech.speech.speak (20:09:33.693) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Nem', 'gomb', 'Alt+', CharacterModeCommand(True), 'N', CharacterModeCommand(False), CancellableSpeech (still valid)]
+IO - speech.speech.speak (20:09:33.821) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés']
+IO - speech.speech.speak (20:09:33.923) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés Másként']
+IO - speech.speech.speak (20:09:33.954) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Fájlnév: nvda.log']
+IO - speech.speech.speak (20:09:33.978) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Részletek ablaktábla']
+IO - speech.speech.speak (20:09:34.090) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Elemek nézete']
+IO - speech.speech.speak (20:09:34.237) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként megerősítése nvda.log már létezik.\r\nCserélni kívánja?']
+IO - speech.speech.speak (20:09:34.287) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként megerősítése']
+IO - speech.speech.speak (20:09:34.336) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Nem']
+IO - speech.speech.speak (20:09:34.429) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Igen']
+IO - speech.speech.speak (20:09:34.476) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Mentés másként megerősítése']
+IO - speech.speech.speak (20:09:34.693) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Igen']
+IO - speech.speech.speak (20:09:35.081) - MainThread (256):
+Speaking [LangChangeCommand ('hu_HU'), 'Igen', 'gomb', 'lenyomva', 'Alt+', CharacterModeCommand(True), 'I', CharacterModeCommand(False), CancellableSpeech (still valid)]

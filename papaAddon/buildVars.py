@@ -25,7 +25,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	"addon_description": _("Reads article content aloud, skipping ads and menus."),
 	# version
-	"addon_version": "1.1.2",
+	"addon_version": "1.1.3",
 	# Author(s)
 	"addon_author": "fagyhalal",
 	# URL for the add-on documentation support
@@ -59,6 +59,7 @@ addon_info = {
 pythonSources = [
     "addon/*.py",
     "addon/globalPlugins/*.py",
+    "addon/papaVoiceReader/*.py",
 ]
 
 # Files that contain strings for translation. Usually your python sources
